@@ -5,7 +5,7 @@ void affiche(const T t) {
 	std::cout << "Pointeur, adresse :" << t << " valeur :" << &t << std::endl;
 }
 
-void constructeur(int * const t) {
+void constructeur(int* const t) {
 	*t = 16;
 }
 

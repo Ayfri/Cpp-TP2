@@ -25,11 +25,11 @@ void destructeur_tableau(ptrStdDouble &dd) {
 	dd = nullptr;
 }
 
-const double &get_tableau(const ptrStdDouble &dd, const unsigned &taille, const unsigned &index) {
+const double& get_tableau(const ptrStdDouble &dd, const unsigned &taille, const unsigned &index) {
 	return dd.get()[index];
 }
 
-double &get_tableau(ptrStdDouble &dd, const unsigned &taille, const unsigned &index) {
+double& get_tableau(ptrStdDouble &dd, const unsigned &taille, const unsigned &index) {
 	return dd.get()[index];
 }
 
