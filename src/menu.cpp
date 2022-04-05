@@ -5,17 +5,11 @@ void runExercice(const int &n) {
 		case 1:
 			ex1();
 			break;
-		/*case 2:
-			ex2();
+		case 2:
+			TP2_2();
 			break;
-		case 3:
+		/*case 3:
 			ex3();
-			break;
-		case 4:
-			ex4();
-			break;
-		case 5:
-			ex5();
 			break;*/
 		default:
 			std::cout << "Choix invalide." << std::endl;
@@ -24,7 +18,7 @@ void runExercice(const int &n) {
 }
 
 inline void show_exercices_list() {
-	for (int i = 1; i < 6; ++i) std::cout << "Exercise " << i << "\n";
+	for (int i = 1; i < 4; ++i) std::cout << "Exercise " << i << "\n";
 }
 
 void show_menu() {
