@@ -9,15 +9,16 @@ void constructeur(int * const t) {
 	*t = 16;
 }
 
-void destructeur(const int * const t) {
+void destructeur(const int* t) {
 	delete t;
+	t = nullptr;
 }
 
 void ex1() {
 	int entier;
 	constructeur(&entier);
 	const int& reference = entier;
-	const auto pointeur = &entier;
+	auto pointeur = &entier;
 	affiche(pointeur);
 	affiche(reference);
 	affiche(entier);

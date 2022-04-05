@@ -8,9 +8,9 @@ void runExercice(const int &n) {
 		case 2:
 			TP2_2();
 			break;
-		/*case 3:
-			ex3();
-			break;*/
+		case 3:
+			TP2_3();
+			break;
 		default:
 			std::cout << "Choix invalide." << std::endl;
 			break;
