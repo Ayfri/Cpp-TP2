@@ -1,11 +1,11 @@
+#pragma once
+
 #include <iostream>
 #include <conio.h>
 #include "./exercices/ex1.hpp"
 #include "exercices/ex2.hpp"
 #include "./exercices/ex3.hpp"
 #include "./utils.hpp"
-
-#pragma once
 
 /**
  * Prend un entier en entrée et exécute l'exercice correspondant.

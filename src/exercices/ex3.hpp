@@ -1,7 +1,7 @@
+#pragma once
+
 #include <iostream>
 #include <memory>
-
-#pragma once
 
 typedef std::shared_ptr<double> ptrStdDouble;
 /**

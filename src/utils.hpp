@@ -1,6 +1,6 @@
-#include <string>
-
 #pragma once
+
+#include <string>
 
 /**
  * Convertir une chaîne en minuscule.
