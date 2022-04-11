@@ -18,14 +18,21 @@ void runExercice(const int &n) {
 }
 
 inline void show_exercices_list() {
+	print_line("Exercices");
 	for (int i = 1; i < 4; ++i) std::cout << "Exercise " << i << "\n";
 }
 
+inline void print_line(const std::string &message, const unsigned &length) {
+	const auto &size = (length / 2U - message.length() / 2U) - 2U;
+	std::cout << std::string(size, '=') << " " << message << " " << std::string(size, '=') << '\n';
+}
+
 void show_menu() {
+	std::cout << "Bienvenue dans le TP 2 !" << '\n';
 	show_exercices_list();
 	
 	do {
-		std::cout << "Veuillez choisir un exercice à lancer : ";
+		std::cout << "Veuillez choisir un exercice à lancer ('exit' pour quitter) : ";
 		
 		std::string input;
 		std::cin >> input;

@@ -20,6 +20,14 @@ void runExercice(const int &n);
 inline void show_exercices_list();
 
 /**
+ * Écrit un texte centré via des = de chaque côtés.
+ *
+ * @param message le texte à écrire.
+ * @param length la longueur des = de chaque côtés.
+ */
+inline void print_line(const std::string &message, const unsigned &length = 40U);
+
+/**
  * Affiche le menu, demande à l'utilisateur de choisir un exercice, exécute l'exercice, affiche à nouveau le menu après.
  * L'utilisateur peut quitter le programme en écrivant "exit".
  */

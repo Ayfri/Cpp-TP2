@@ -22,6 +22,7 @@ void modifier_tableau(const ptrStdDouble &dd, const unsigned &taille, const unsi
 }
 
 void destructeur_tableau(ptrStdDouble &dd) {
+	dd.reset();
 	dd = nullptr;
 }
 
@@ -35,7 +36,7 @@ double& get_tableau(ptrStdDouble &dd, const unsigned &taille, const unsigned &in
 
 void TP2_3() {
 	ptrStdDouble d1 = nullptr;
-	unsigned t1 = 5;
+	constexpr auto t1 = 5U;
 	constructeur_tableau(d1, t1);
 	afficher_tableau(d1, t1);
 	modifier_tableau(d1, t1, 2, 3.13589985);
