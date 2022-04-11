@@ -1,6 +1,7 @@
 #include "menu.hpp"
 
 void runExercice(const int &n) {
+	print_line("Exercice " + std::to_string(n) + " :");
 	switch (n) {
 		case 1:
 			ex1();
@@ -12,8 +13,8 @@ void runExercice(const int &n) {
 			TP2_3();
 			break;
 		default:
-			std::cout << "Choix invalide." << std::endl;
-			break;
+			std::cout << "Choix invalide." << '\n';
+			return;
 	}
 }
 
